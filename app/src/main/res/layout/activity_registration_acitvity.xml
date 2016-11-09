@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_registration_acitvity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.maimanhduy.internshipdai1.RegistrationAcitvity">
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/action_bar_resgistration"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/text_resgistration_padleft"
+            android:paddingStart="@dimen/text_resgistration_padleft"
+            android:paddingRight="0dp"
+            android:paddingEnd="0dp"
+            android:paddingTop="@dimen/text_resgistration_padtop"
+            android:text="@string/registration"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_resgistration_size"
+            android:typeface="normal"
+            android:id="@+id/textView" />
+
+        <ImageView
+            android:contentDescription="@null"
+            android:layout_width="0dp"
+            android:src="@drawable/ic_close"
+            android:id="@+id/imageView5"
+            android:layout_weight="1"
+            android:adjustViewBounds="false"
+            android:cropToPadding="false"
+            android:scaleType="fitEnd"
+            android:layout_marginRight="@dimen/img_x_mar_right"
+            android:layout_marginEnd="@dimen/img_x_mar_right"
+            android:layout_height="@dimen/img_x_height"
+            android:layout_marginTop="@dimen/img_x_mar_top" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearlayout02"
+        android:layout_marginTop="@dimen/layout_reg_content_martop"
+        android:layout_marginEnd="@dimen/layout_reg_content_mar_right"
+        android:layout_marginStart="@dimen/layout_reg_content_mar_left"
+        android:layout_marginRight="@dimen/layout_reg_content_mar_right"
+        android:layout_marginLeft="@dimen/layout_reg_content_mar_left"
+        android:paddingLeft="@dimen/layout_reg_content_pad_left"
+        android:paddingRight="@dimen/layout_reg_content_pad_right"
+        android:paddingStart="@dimen/layout_reg_content_pad_left"
+        android:paddingEnd="@dimen/layout_reg_content_pad_right">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:hint="@string/hint_username"
+            android:drawablePadding="@dimen/edt_username_padding"
+            android:drawableLeft="@drawable/ic_mail"
+            android:drawableStart="@drawable/ic_mail"
+            android:id="@+id/edMailRes" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:hint="@string/user"
+            android:drawablePadding="@dimen/edt_username_padding"
+            android:drawableLeft="@drawable/ic_person"
+            android:drawableStart="@drawable/ic_person"
+            android:id="@+id/edUserRes"
+            android:layout_marginTop="@dimen/edt_reg_username_martop" />
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:id="@+id/edPassRes"
+                android:drawablePadding="@dimen/edt_username_padding"
+                android:drawableLeft="@drawable/ic_lock"
+                android:drawableStart="@drawable/ic_lock"
+                android:hint="@string/hint_password"
+                android:layout_marginTop="@dimen/edt_reg_username_martop" />
+
+            <Switch
+                android:layout_gravity="end|bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/switch_mar_bot"
+                android:id="@+id/switchOn" />
+        </FrameLayout>
+
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/idRadioGroup1"
+            android:weightSum="2"
+            android:layout_marginTop="@dimen/radio_mar_top"
+            android:orientation="horizontal">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/male"
+                android:id="@+id/male"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/female"
+                android:id="@+id/female"
+                android:layout_height="wrap_content" />
+        </RadioGroup>
+
+        <Button
+            android:text="@string/button_get_started"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btGetStarRes"
+            android:layout_marginTop="@dimen/button_get_start"
+            android:textSize="@dimen/button_get_start_text_size"
+            android:background="@color/button_get_start_color"
+            android:textColor="@android:color/background_light"
+            android:typeface="normal" />
+    </LinearLayout>
+
+</RelativeLayout>

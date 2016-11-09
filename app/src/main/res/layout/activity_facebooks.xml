@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_facebooks"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/facebook_backgound"
+    tools:context="com.example.maimanhduy.internshipdai1.Facebooks">
+<TableLayout
+    android:background="@color/facebook_backgound"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="1"
+    android:layout_marginTop="@dimen/table_margin_top">
+    <TableRow
+        android:layout_marginLeft="@dimen/tablerow_margin_left"
+        android:layout_marginStart="@dimen/tablerow_margin_left"
+        android:layout_marginRight="@dimen/tablerow_margin_right"
+        android:layout_marginEnd="@dimen/tablerow_margin_right"
+        android:layout_marginTop="@dimen/tablerow_margin_top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+       <ImageView
+           android:contentDescription="@string/img_Images_not_load"
+           android:layout_weight="1"
+           android:layout_width="@dimen/logo_facebook_width"
+           android:layout_height="@dimen/logo_facebook_height"
+           android:src="@drawable/facebook_login"
+           android:textAlignment="center"/>
+
+    </TableRow>
+    <TableRow
+        android:layout_marginLeft="@dimen/tablerow_margin_left"
+        android:layout_marginStart="@dimen/tablerow_margin_left"
+        android:layout_marginRight="@dimen/tablerow_margin_right"
+        android:layout_marginEnd="@dimen/tablerow_margin_right"
+        android:layout_marginTop="@dimen/tablerow_margin_top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <EditText android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/fbUser"
+            android:textColorHint="?attr/colorBackgroundFloating"
+            android:hint="@string/hint_username"
+            android:textColor="@android:color/white" />
+
+    </TableRow>
+    <TableRow
+        android:layout_marginLeft="@dimen/tablerow_margin_left"
+        android:layout_marginStart="@dimen/tablerow_margin_left"
+        android:layout_marginRight="@dimen/tablerow_margin_right"
+        android:layout_marginEnd="@dimen/tablerow_margin_right"
+        android:layout_marginTop="@dimen/tablerow_margin_top"
+        >
+        <EditText android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColorHint="?attr/colorBackgroundFloating"
+            android:hint="@string/hint_password"
+            android:id="@+id/fbPass"
+            android:textColor="@android:color/white" />
+
+    </TableRow>
+    <TableRow
+        android:layout_marginLeft="@dimen/tablerow_margin_left"
+        android:layout_marginStart="@dimen/tablerow_margin_left"
+        android:layout_marginRight="@dimen/tablerow_margin_right"
+        android:layout_marginEnd="@dimen/tablerow_margin_right"
+        android:layout_marginTop="@dimen/tablerow_margin_top"
+        >
+       <Button
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:id="@+id/fbLogin"
+           android:background="@color/facebook_button"
+           android:textColor="?attr/colorBackgroundFloating"
+           android:text="@string/button_text_login"/>
+
+    </TableRow>
+    <TableRow
+        android:layout_marginLeft="@dimen/tablerow_margin_left"
+        android:layout_marginStart="@dimen/tablerow_margin_left"
+        android:layout_marginRight="@dimen/tablerow_margin_right"
+        android:layout_marginEnd="@dimen/tablerow_margin_right"
+        android:layout_marginTop="@dimen/tablerow_signup_margin_top"
+        >
+        <TextView
+            android:text="@string/text_sign_up"
+            android:textColor="?attr/colorBackgroundFloating"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textAlignment="center" />
+    </TableRow>
+    <TableRow
+        android:layout_marginLeft="@dimen/tablerow_margin_left"
+        android:layout_marginStart="@dimen/tablerow_margin_left"
+        android:layout_marginRight="@dimen/tablerow_margin_right"
+        android:layout_marginEnd="@dimen/tablerow_margin_right"
+        android:layout_marginTop="@dimen/tablerow_margin_top"
+        >
+        <TextView
+            android:text="@string/text_need_help"
+            android:textColor="?attr/colorBackgroundFloating"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textAlignment="center" />
+    </TableRow>
+</TableLayout>
+</RelativeLayout>
